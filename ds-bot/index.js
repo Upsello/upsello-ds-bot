@@ -63,7 +63,9 @@ export const inject = ['llm', 'tools', 'systemPrompt', 'sessionController', 'ses
 const MODULES = [diagnostics, store, ledger, models, providers, permissions, turns, steer, handoffs, requests, delivery, roster, folders, privacy, agents, prompt, timeContext, tools, chatIndex, groups, goals, approvals, resume, memory, parts, images, avatarLibrary, secrets, connectors, capabilities, learning, schedules, browser, browserPlugins, computer, usage, update, dshUpdate, thinking, mobile, feed, phone, im, channel, officeSkills, goalSkills, localAgents]
 
 export function apply(ctx, config = {}) {
-  createRuntime(ctx, config)
+  // The team runtime another plugin builds on (upsello-bot-plugin). A test stand-in ctx
+  // has no services, hence the optional call.
+  ctx.provide?.('botRuntime', createRuntime(ctx, config))
 }
 
 export function createRuntime(ctx, config = {}) {

@@ -264,3 +264,18 @@ Cline (Cline Bot Inc.), Qwen (Alibaba Cloud), Devin (Cognition AI),
 OpenAI (OpenAI). DS Bot is not affiliated with or endorsed by these owners.
 Vector marks from Simple Icons (https://simpleicons.org), CC0-1.0.
 Devin and OpenAI marks from the vendors' application icons.
+
+==============================================================================
+Modifications in this fork
+==============================================================================
+
+This repository is a fork of DS Bot published as `upsello-ds-bot`. Modifications:
+
+  - ds-bot/index.js: `apply()` publishes the team runtime as the `botRuntime` service,
+    so another DSH plugin can build on the Bot team without importing DS Bot's files.
+  - ds-bot/package.json: package name, description and repository point at this fork.
+  - ds-bot/cordis.patch.yml: the mounted rows name `upsello-ds-bot`.
+  - README.md: a fork notice at the top.
+
+Nothing else in the source differs from the upstream release this fork tracks.
+

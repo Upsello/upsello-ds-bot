@@ -1,7 +1,7 @@
 {
-  "name": "ds-bot",
+  "name": "upsello-ds-bot",
   "version": "0.3.5",
-  "description": "DS Bot: a team of long-lived Bots for DeepSeek Harness, with Main Bots, Bot-to-Bot messages and group chats",
+  "description": "A fork of DS Bot that publishes its team runtime as the botRuntime service, for plugins built on it",
   "keywords": [
     "dsh-plugin",
     "deepseek-harness",
@@ -11,13 +11,13 @@
     "multi-agent",
     "agents"
   ],
-  "homepage": "https://github.com/Fei2411/DS-Bot#readme",
+  "homepage": "https://github.com/Upsello/upsello-ds-bot#readme",
   "bugs": {
-    "url": "https://github.com/Fei2411/DS-Bot/issues"
+    "url": "https://github.com/Upsello/upsello-ds-bot/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Fei2411/DS-Bot.git",
+    "url": "git+https://github.com/Upsello/upsello-ds-bot.git",
     "directory": "ds-bot"
   },
   "license": "Apache-2.0",

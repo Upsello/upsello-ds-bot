@@ -8,6 +8,12 @@ English | [中文](README.zh.md)
 
 DS Bot is an open-source project built on [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (DSH), available as a standalone desktop app or as a DSH plugin. It turns DSH into bots that you create, talk to and work with.
 
+> **This repository is a fork.** It is DS Bot as published by its author, with one
+> change: `apply()` publishes the team runtime as the `botRuntime` service so other DSH
+> plugins can build on the Bot team (`ds-bot/index.js`). The package is published as
+> `upsello-ds-bot` under Apache-2.0. It is not the official DS Bot, and issues here are
+> answered by this fork's maintainers, not by the DS Bot author.
+
 ## Sponsors
 
 <table>
